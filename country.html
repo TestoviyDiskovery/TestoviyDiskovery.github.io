@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #f0f0f5, #e0e0e5);
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 60px;
+        }
+
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .theme-toggle {
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button {
+            padding: 15px 30px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            }
+        .uk-table {
+            width: 40%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .uk-table th, .uk-table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .uk-table th {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        .uk-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .uk-table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+
+        footer {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="/sites.html" class="back-button"><i class="fas fa-arrow-left"></i> Назад</a>
+    <table class="uk-table uk-table-striped">
+        <thead>
+            <tr>
+                <th>КОД</th>
+                <th>СТРАНА</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A</td>
+                <td>Канада</td>
+            </tr>
+            <tr>
+                <td>AB</td>
+                <td>Египет, Иордан, Саудовская Аравия, ОАЭ</td>
+            </tr>
+            <tr>
+                <td>AE</td>
+                <td>ОАЭ, Бахрейн, Кувейт, Катар, Саудовская Аравия</td>
+            </tr>
+            <tr>
+                <td>AH</td>
+                <td>Бахрейн, Кувейт</td>
+            </tr>
+            <tr>
+                <td>AM</td>
+                <td>США (Собран во Вьетнаме)</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>Великобритания, Ирландия</td>
+            </tr>
+            <tr>
+                <td>BR</td>
+                <td>Бразилия (Собран в Бразилии)</td>
+            </tr>
+            <tr>
+                <td>BZ</td>
+                <td>Бразилия (Собран в Китае)</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Канада</td>
+            </tr>
+            <tr>
+                <td>CL</td>
+                <td>Канада</td>
+            </tr>
+            <tr>
+                <td>CH</td>
+                <td>Китай</td>
+            </tr>
+            <tr>
+                <td>CZ</td>
+                <td>Чехия</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>Германия</td>
+            </tr>
+            <tr>
+                <td>DN</td>
+                <td>Австрия, Германия, Нидерланды</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>Мексика</td>
+            </tr>
+            <tr>
+                <td>EE</td>
+                <td>Эстония</td>
+            </tr>
+            <tr>
+                <td>ET</td>
+                <td>Эстония</td>
+            </tr>
+            <tr>
+                <td>FB</td>
+                <td>Франция, Люксембург</td>
+            </tr>
+            <tr>
+                <td>FD</td>
+                <td>Австрия, Лихтенштейн, Швейцария</td>
+            </tr>
+            <tr>
+                <td>GR</td>
+                <td>Греция</td>
+            </tr>
+            <tr>
+                <td>HN</td>
+                <td>Индия</td>
+            </tr>
+            <tr>
+                <td>IP</td>
+                <td>Италия</td>
+            </tr>
+            <tr>
+                <td>HB</td>
+                <td>Израиль</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>Япония</td>
+            </tr>
+            <tr>
+                <td>KH</td>
+                <td>Корея, Китай</td>
+            </tr>
+            <tr>
+                <td>KN</td>
+                <td>Норвегия</td>
+            </tr>
+            <tr>
+                <td>KS</td>
+                <td>Финляндия, Швеция</td>
+            </tr>
+            <tr>
+                <td>LA</td>
+                <td>Колумбия, Эквадор, Гватемала, Гондурас, Перу</td>
+            </tr>
+            <tr>
+                <td>LE</td>
+                <td>Аргентина</td>
+            </tr>
+            <tr>
+                <td>LL</td>
+                <td>США, Канада</td>
+            </tr>
+            <tr>
+                <td>LZ</td>
+                <td>Чили, Парагвай, Уругвай</td>
+            </tr ```html
+            <tr>
+                <td>MG</td>
+                <td>Венгрия</td>
+            </tr>
+            <tr>
+                <td>MO</td>
+                <td>Макао, Гонконг</td>
+            </tr>
+            <tr>
+                <td>MY</td>
+                <td>Малайзия</td>
+            </tr>
+            <tr>
+                <td>NF</td>
+                <td>Бельгия, Франция, Люксембург</td>
+            </tr>
+            <tr>
+                <td>PK</td>
+                <td>Польша, Финляндия</td>
+            </tr>
+            <tr>
+                <td>PL</td>
+                <td>Польша</td>
+            </tr>
+            <tr>
+                <td>PM</td>
+                <td>Польша</td>
+            </tr>
+            <tr>
+                <td>PO</td>
+                <td>Португалия</td>
+            </tr>
+            <tr>
+                <td>PP</td>
+                <td>Филиппины</td>
+            </tr>
+            <tr>
+                <td>QL</td>
+                <td>Испания, Италия, Португалия</td>
+            </tr>
+            <tr>
+                <td>QN</td>
+                <td>Дания, Норвегия, Швеция, Исландия</td>
+            </tr>
+            <tr>
+                <td>RK</td>
+                <td>Казахстан</td>
+            </tr>
+            <tr>
+                <td>RM</td>
+                <td>Россия, Казахстан</td>
+            </tr>
+            <tr>
+                <td>RO</td>
+                <td>Румыния</td>
+            </tr>
+            <tr>
+                <td>RP</td>
+                <td>Россия</td>
+            </tr>
+            <tr>
+                <td>RR</td>
+                <td>Россия</td>
+            </tr>
+            <tr>
+                <td>RS</td>
+                <td>Россия</td>
+            </tr>
+            <tr>
+                <td>RU</td>
+                <td>Россия</td>
+            </tr>
+            <tr>
+                <td>SE</td>
+                <td>Сербия</td>
+            </tr>
+            <tr>
+                <td>SL</td>
+                <td>Словакия</td>
+            </tr>
+            <tr>
+                <td>SO</td>
+                <td>ЮАР</td>
+            </tr>
+            <tr>
+                <td>SU</td>
+                <td>Украина</td>
+            </tr>
+            <tr>
+                <td>T</td>
+                <td>Италия</td>
+            </tr>
+            <tr>
+                <td>TA</td>
+                <td>Тайвань</td>
+            </tr>
+            <tr>
+                <td>TU</td>
+                <td>Турция</td>
+            </tr>
+            <tr>
+                <td>TY</td>
+                <td>Италия</td>
+            </tr>
+            <tr>
+                <td>VC</td>
+                <td>Канада</td>
+            </tr>
+            <tr>
+                <td>X</td>
+                <td>Австралия, Новая Зеландия</td>
+            </tr>
+            <tr>
+                <td>Y</td>
+                <td>Испания</td>
+            </tr>
+            <tr>
+                <td>ZA</td>
+                <td>Сингапур</td>
+            </tr>
+            <tr>
+                <td>ZD</td>
+                <td>Германия, Бельгия, Люксембург, Австралия, Монако</td>
+            </tr>
+            <tr>
+                <td>ZP</td>
+                <td>Гонконг, Макао</td>
+            </tr>
+
+            <thead>
+                <tr>
+                    <th>Страна</th>
+                    <th>Ограничения</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>ЕС</td>
+                <td>громкость в проводных наушниках в среднем ниже на 20%, на беспроводную гарнитуру не распространяется.</td>
+            </tr>
+            <tr>
+                <td>Япония</td>
+                <td>звук затвора не отключается даже при беззвучном режиме</td>
+            </tr>
+            <tr>
+                <td>ОАЭ, Саудовская Аравия</td>
+                <td>не работает FaceTime.</td>
+            </tr>
+            <tr>
+                <td>eSim</td>
+                <td>доступен только в версии для США и Пуэрто-Рико.</td>
+            </tr>
+            <tr>
+                <td>Dual-Sim</td>
+                <td>доступен только в версии для Китая, Макао</td>
+            </tr>
+            <tr>
+                <td>eSim+Sim</td>
+                <td>доступен в версиях для всех остальных стран.</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видео страница</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding-top: 60px;
+            background-color: #f0f0f5; /* Светлый фон, похожий на iOS */
+            color: #333; /* Темный текст */
+        }
+
+        header {
+            background-color: #ffffff; /* Белый фон заголовка */
+            color: #333;
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для заголовка */
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #007bff; /* Цвет ссылок */
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #0056b3; /* Цвет при наведении */
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ffffff; /* Белый фон для подвала */
+            color: #333;
+            text-align: center;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Тень для подвала */
+        }
+
+        .video-section {
+            margin-top: 80px; /* Отступ сверху, чтобы не перекрывался заголовком */
+            padding: 20px;
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            background-color: #ffffff; /* Белый фон для секции видео */
+            border-radius: 10px; /* Закругленные углы */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для секции видео */
+        }
+
+        .video {
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 315px; /* Высота видео */
+            border-radius: 10px; /* Закругленные углы для видео */
+            overflow: hidden; /* Скрыть переполнение */
+        }
+
+        h2 {
+            font-size: 24px; /* Размер заголовка */
+            margin-bottom: 20px; /* Отступ снизу */
+        }
+
+        h3 {
+            font-size: 18px; /* Размер подзаголовка */
+            margin: 10px 0; /* Отступ сверху и снизу */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Главная </a></li>
+                <li><a href="/price.html">Цены</a></li>
+                <li><a href="/sites.html">Сайты</a></li>
+                <li><a href="/promo.html">Акции</a></li>
+                <li><a href="/feedback.html">Предложения</a></li>
+                <li><a href="/video.html">Видео</a></li>
+            </ul>
+        </nav>
+    </header>
+<h1>Наблюдаются сбои в работе видео-хостинга <br> временно - рутуб <br>  в скором времени всё исправим</h1>
+    <div class="video-section">
+        <h2>Полезные видео</h2>
+        <div class="video">
+
+      <iframe
+        width="720"
+        height="405"
+        src="https://rutube.ru/play/embed/7bdd76070b4f86581b2b661a37574a65/?p=d4x2LCP92bc07YqNmUtfYA"
+        frameBorder="0"
+        allow="clipboard-write; autoplay"
+        webkitAllowFullScreen
+        mozallowfullscreen
+        allowFullScreen
+      ></iframe>
+    
+        <div class="video">
+            <h3>2 - Как сбросить AirPods</h3>
+            <iframe src="https://rutube.ru/play/embed/14be93861e6a8dafd596c4d3de8d1da6/?p=JX5JLB7HoRCaW6Ln-gx1fw" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+        <div class="video">
+            <h3>3 - Как создать Apple ID</h3>
+            <iframe src="https://rutube.ru/play/embed/8ab5992553ca05ab3661769d937a5924/?p=wH3eSddh2Ka-SVCSNGlN7A" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+        <div class="video">
+            <h3>4 - Перенос данных</h3>
+            <iframe src="https://rutube.ru/play/embed/419deac3f99abf8c6a331e94fea0670f/?p=4MxR3cph14z2UsX0AdBwFg" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+        <div class="video">
+            <h3>5 - Как установить Office на Mac</h3>
+            <iframe src="https://rutube.ru/play/embed/ab4cd349a0aa25f6921210b3bf693a59/?p=jVOFOdXXj8PdJsem8ljdEA" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+    </div>
+
+    <footer>
+        © Milinov
+    </footer>
+<script>
+        alert("В разработке");
+</script>
+</body>
+
+</html>

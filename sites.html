@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Выбор сайтов</title>
+    <style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding-top: 60px;
+        background: linear-gradient(to right, #f0f0f5, #e0e0e5);
+        color: #333;
+    }
+
+        header {
+            background-color: #007aff;
+            color: white;
+            padding: 15px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffdd57;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 800px;
+            width: 100%;
+            margin: 20px;
+        }
+
+            .card {
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        margin: 15px;
+        width: 200px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        padding: 5px;
+    }
+
+        .card img {
+            margin: 20px;
+            width: 100px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+
+            .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    }
+
+        .card-title {
+            padding: 10px;
+            font-size: 16px;
+            color: #333;
+            text-decoration: none;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/price.html">Цены</a></li>
+                <li><a href="/sites.html">Сайты</a></li>
+                <li><a href="/promo.html">Акции</a></li>
+                <li><a href="/feedback.html">Предложения</a></li>
+                <li><a href="/video.html">Видео</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <a href="/country.html"  class="card-title">
+                <img src="/img/country.png" alt="страна айфона">
+                Страна айфона
+            </a>
+        </div>
+        <div class="card">
+            <a href="https://checkcoverage.apple.com/?locale=ru_RU" target="_blank" class="card-title">
+                <img src="/img/apple-icon.png" alt="Сайт 2">
+                Проверка на гарнтию iPhone Apple
+            </a>
+        </div>
+        <div class="card">
+            <a href="https://sickw.com" target="_blank" class="card-title">
+                <img src="/img/apple-iphone-app-icon.png" alt="Сайт 3">
+                Подробная проверка айфона по imei
+            </a>
+        </div>
+        <div class="card">
+            <a href="https://istudio-msk.ru" target="_blank" class=" card-title">
+                <img src="/img/6982003-2.png" alt="Сайт 4">
+                iStudio
+            </a>
+        </div>
+        <div class="card">
+            <a href="https://www.avito.ru/profile/" target="_blank" class="card-title">
+                <img src="/img/avito.png" alt="Сайт 5">
+                Avito
+            </a>
+        </div>
+        <div class="card">
+            <a href="https://istudio16crm.amocrm.ru/todo/line/" target="_blank" class="card-title">
+                <img src="/img/amo.png" alt="Сайт 6">
+                AMOCRM
+            </a>
+        </div>
+        <div class="card">
+            <a href="https://taplink.cc/istudio_discovery" target="_blank" class="card-title">
+                <img src="/img/bonus.png" alt="Сайт 6">
+                Создать Бонусную 
+            </a>
+        </div>
+    </div>
+
+
+    <footer>
+        © Milinov
+    </footer>
+</body>
+
+</html>

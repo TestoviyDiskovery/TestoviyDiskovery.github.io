@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding-top: 60px;
+            background-color: #f7f7f8; /* Светлый фон, как в iOS */
+            color: #333; /* Темный текст */
+        }
+
+        header {
+            background-color: #007aff; /* Цвет заголовка */
+            color: white;
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            text-align: center;
+            font-size: 20px;
+            border-bottom: 1px solid #d1d1d6; /* Легкая граница снизу */
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffdd57;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white; /* Белый фон для контейнера */
+            border-radius: 12px; /* Закругленные углы */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень */
+            margin-top: 80px; /* Отступ сверху для фиксированного заголовка */
+        }
+
+        h1 {
+            margin: 10px 0;
+            color: #333;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        section {
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #d1d1d6; /* Светлая граница */
+            border-radius: 10px; /* Закругленные углы */
+            background-color: #f9f9f9; /* Светлый фон для секций */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Легкая тень */
+            transition: background-color 0.3s;
+        }
+
+        section:hover {
+            background-color: #e0e0e5; /* Цвет при наведении */
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #007aff; /* Цвет подвала */
+            color: white;
+            text-align: center;
+            width: 100%;
+            border-radius: 0 0 12px 12px; /* Закругленные углы внизу */
+        }
+
+        .tg {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-decoration: none;
+            border: 1px solid #d1d1d6; /* Светлая граница */
+            border-radius: 10px; /* Закругленные углы */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 300px;
+            background-color: white; /* Цвет фона */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
+        }
+
+        svg {
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/price.html">Цены</a></li>
+                <li><a href="/sites.html">Сайты</a> </li>
+                <li><a href="/promo.html">Акции</a></li>
+                <li><a href="/feedback.html">Предложения</a></li>
+                <li><a href="/video.html">Видео</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>По всем пожеланиям на новые фишки сайта, так же сообщить о баге</h1>
+
+        <div class="tg">
+            <a href="https://forms.gle/SRMNErt9cjB6gQ8k7" target="_blank">
+<svg viewBox="0 -18 1060 1060" fill="#000000" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M963.2 408c-13.6 0-24 11.2-24 24v432c0 27.2-21.6 48.8-48.8 48.8H159.2c-27.2 0-48.8-21.6-48.8-48.8V159.2c0-27.2 21.6-48.8 48.8-48.8h470.4c13.6 0 24-11.2 24-24 0-13.6-11.2-24-24-24H154.4C103.2 62.4 61.6 104 61.6 155.2v715.2c0 51.2 41.6 92.8 92.8 92.8h740.8c51.2 0 92.8-41.6 92.8-92.8V432c0-12.8-11.2-24-24.8-24z" fill=""></path><path d="M968 151.2l-44-44c-30.4-30.4-78.4-33.6-105.6-5.6L355.2 564.8 510.4 720l463.2-463.2c28-27.2 25.6-75.2-5.6-105.6z m-116.8 159.2l-344 344-86.4-85.6 345.6-345.6 84.8 87.2z m88-88l-51.2 51.2-85.6-86.4 50.4-50.4c10.4-10.4 28.8-9.6 40 2.4l44 44c12 10.4 12.8 28.8 2.4 39.2zM355.2 566.4l-48 174.4c-2.4 8 0 16 5.6 21.6 5.6 5.6 13.6 8 21.6 5.6l174.4-48-36-36L360 715.2l31.2-113.6-36-35.2z" fill=""></path></g></svg>
+                <h2>Отзыв</h2>
+            </a>
+        </div>
+
+        <footer>
+            © Milinov
+        </footer>
+
+</body>
+
+</html>
